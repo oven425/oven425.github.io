@@ -39,7 +39,7 @@
   </header>
 
   <div class="flex flex-row flex-grow text-amber-800">
-    <aside class="w-64 p-2 border-r border-stone-400 hidden md:block">
+    <aside class="w-64 p-2 border-r shrink-0 border-stone-400 hidden md:block">
       <h2 class="text-lg font-bold mb-2">Tech Topics</h2>
       <div class="grid grid-cols-2 text-amber-800 gap-1">
         <div class="border rounded-sm border-stone-400 flex justify-between items-center gap-2 p-1">
@@ -74,110 +74,108 @@
           <span>SQLite</span>
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Sqlite-square-icon.svg" class="w-6">
         </div>
-        
       </div>
-
-
     </aside>
 
-    <main class="flex-grow p-4">
-      <h2 class="text-3xl font-semibold text-amber-800">線上展示</h2>
-      <section class="grid grid-cols-1 md:grid-cols-2 gap-1">
-        <div class="rounded-md border border-stone-400">
-          <div class="p-6">
-            <h3 class="text-3xl font-semibold text-amber-800 mb-2">Flex test tool</h3>
-            <div class="flex gap-1">
+    <main class="flex-grow p-2">
+      <section>
+        <h2 class="text-3xl font-semibold text-amber-800">線上展示</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-1">
+          <div class="rounded-md border border-stone-400">
+            <div class="p-5">
+              <h3 class="text-3xl font-semibold text-amber-800 mb-2">Flex test tool</h3>
               <div class="flex gap-1">
-                <img src="./assert/React.svg" class="w-5 stroke-purple-900">
+                <div class="flex gap-1">
+                  <img src="./assert/React.svg" class="w-5 stroke-purple-900">
+                </div>
+                <div class="flex gap-1">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-5">
+                </div>
               </div>
-              <div class="flex gap-1">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-5">
+              <p class="text-stone-900 mb-4 text-lg">
+                線上Flexbox測試/學習
+              </p>
+              <div class="flex flex-row-reverse">
+                <a href="./my-flex-app/index.html"
+                  class="text-primary hover:text-blue-700 font-medium inline-flex items-center">
+                  Demo &rarr;
+                </a>
               </div>
-            </div>
-            <p class="text-stone-900 mb-4 text-lg">
-              線上Flexbox測試/學習
-            </p>
-            <div class="flex flex-row-reverse">
-              <a href="./my-flex-app/index.html"
-                class="text-primary hover:text-blue-700 font-medium inline-flex items-center">
-                Demo &rarr;
-              </a>
             </div>
           </div>
-        </div>
-        <div class="rounded-md border border-stone-400">
-          <div class="p-6">
-            <h3 class="text-3xl font-semibold text-amber-800 mb-1">PLC Simulator</h3>
-            <div class="flex gap-1">
-              <img src="./assert/CSharp.svg" class="w-5">
-              <img src="./assert/WebAssembly.svg" class="w-5">
-              <img src="./assert/React.svg" class="w-5 stroke-purple-900">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-5">
+          <div class="rounded-md border border-stone-400">
+            <div class="p-5">
+              <h3 class="text-3xl font-semibold text-amber-800 mb-1">PLC Simulator</h3>
+              <div class="flex gap-1">
+                <img src="./assert/CSharp.svg" class="w-5">
+                <img src="./assert/WebAssembly.svg" class="w-5">
+                <img src="./assert/React.svg" class="w-5 stroke-purple-900">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-5">
+              </div>
+              <p class="text-stone-900 mb-4 text-lg">
+                支援使用IL的線上模擬器
+              </p>
+              <div class="flex flex-row-reverse">
+                <a href="./my-plc-app/index.html"
+                  class="text-primary hover:text-blue-700 font-medium inline-flex items-center">
+                  Demo &rarr;
+                </a>
+              </div>
             </div>
-            <p class="text-stone-900 mb-4 text-lg">
-              支援使用IL的線上模擬器
-            </p>
-            <div class="flex flex-row-reverse">
-              <a href="./my-plc-app/index.html"
-                class="text-primary hover:text-blue-700 font-medium inline-flex items-center">
-                Demo &rarr;
-              </a>
-            </div>
-
           </div>
         </div>
       </section>
       <section class="mt-2">
         <h2 class="text-3xl font-semibold text-amber-800">Nuget套件</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 p-1 gap-1">
+        <div class="grid grid-cols-1 lg:grid-cols-2 p-1 gap-1">
           <div class="rounded-md border border-stone-400">
-            <div class="p-6">
+            <div class="p-5">
               <h3 class="text-3xl font-semibold text-amber-800 mb-1">QSoft.DevCon</h3>
               <p class="text-stone-900 mb-4 text-lg">
                 Easy to get device information and enable/disable device
               </p>
               <div class="flex flex-row-reverse">
                 <a href="https://www.nuget.org/packages/QSoft.DevCon" class="w-6 inline-flex items-center">
-                  <img src="./assert/NuGet_project_logo.svg" alt="我的 SVG 图标">
+                  <img src="./assert/NuGet_project_logo.svg" alt="Nuget">
                 </a>
               </div>
             </div>
           </div>
           <div class="rounded-md border border-stone-400">
-            <div class="p-6">
+            <div class="p-5">
               <h3 class="text-3xl font-semibold text-amber-800 mb-1">QSoft.MediaCapture</h3>
               <p class="text-stone-900 mb-4 text-lg">
                 Easy to use webcam and capture card
               </p>
               <div class="flex flex-row-reverse">
                 <a href="https://www.nuget.org/packages/QSoft.MediaCapture" class="w-6 inline-flex items-center">
-                  <img src="./assert/NuGet_project_logo.svg" alt="我的 SVG 图标">
+                  <img src="./assert/NuGet_project_logo.svg" alt="Nuget">
                 </a>
               </div>
             </div>
           </div>
           <div class="rounded-md border border-stone-400">
-            <div class="p-6">
+            <div class="p-5">
               <h3 class="text-3xl font-semibold text-amber-800 mb-1">QSoft.WPF.Panel</h3>
               <p class="text-stone-900 mb-4 text-lg">
                 Provide more panel, makes layout more easy at WPF
               </p>
               <div class="flex flex-row-reverse">
                 <a href="https://www.nuget.org/packages/QSoft.WPF.Panel" class="w-6 inline-flex items-center">
-                  <img src="./assert/NuGet_project_logo.svg" alt="我的 SVG 图标">
+                  <img src="./assert/NuGet_project_logo.svg" alt="Nuget">
                 </a>
               </div>
             </div>
           </div>
           <div class="rounded-md border border-stone-400">
-            <div class="p-6">
+            <div class="p-5">
               <h3 class="text-3xl font-semibold text-amber-800 mb-1">QSoft.Apng</h3>
               <p class="text-stone-900 mb-4 text-lg">
                 APNG for WPF
               </p>
               <div class="flex flex-row-reverse">
                 <a href="https://www.nuget.org/packages/QSoft.Apng" class="w-6 inline-flex items-center">
-                  <img src="./assert/NuGet_project_logo.svg" alt="我的 SVG 图标">
+                  <img src="./assert/NuGet_project_logo.svg" alt="Nuget">
                 </a>
               </div>
             </div>
